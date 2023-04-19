@@ -8,7 +8,14 @@ const mergeArrays = [
 ];
 
 console.log(mergeArrays);
+// ---------------------------------------------------
 
+// ćwiczenie 2
+
+const names = [2, "delfin", null];
+const exceptFirst = (names) => names.slice(1);
+
+console.log(exceptFirst(names));
 // ---------------------------------------------------
 
 // ćwiczenie 6.
