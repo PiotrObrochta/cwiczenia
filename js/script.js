@@ -18,6 +18,15 @@ const exceptFirst = (names) => names.slice(1);
 console.log(exceptFirst(names));
 // ---------------------------------------------------
 
+// ćwiczenie 3
+
+const parameters = [1, 3, undefined, true];
+
+const last2Parameters = (parameters) => parameters.slice(2)
+console.log(last2Parameters(parameters))
+
+// ---------------------------------------------------
+
 // ćwiczenie 6.
 
 const numbers = [2, 4, 7, 8];
