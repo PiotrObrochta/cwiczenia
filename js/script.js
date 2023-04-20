@@ -86,3 +86,22 @@ const someAdult = (people) => people.some(({ age }) => age >= 18);
 console.log(someAdult(people));
 
 // ------------------------------------------------------------------
+
+// ćwiczenie 9.
+
+const strings1 = ["", "Żelazko", 45];
+const strings2 = ["", "Żelazko"];
+
+const onlyString1 = (strings1) => strings1.every((string) => typeof string === "string");
+
+console.log(onlyString1(strings1));
+
+const onlyString2 = (strings2) => strings2.every((string) => typeof string === "string");
+
+console.log(onlyString2(strings2));
+
+// ------------------------------------------------------------------
+
+//
+
+
