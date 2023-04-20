@@ -27,6 +27,14 @@ console.log(last2Parameters(parameters))
 
 // ---------------------------------------------------
 
+// ćwiczenie 4.
+
+const kawa = ["rum", "kawa", "sangria"];
+const indexOf = () => kawa.indexOf("kawa")
+console.log(indexOf(kawa));
+
+// --------------------------------------------------------
+
 // ćwiczenie 6.
 
 const numbers = [2, 4, 7, 8];
