@@ -8,24 +8,26 @@ const mergeArrays = [
 ];
 
 console.log(mergeArrays);
-// ---------------------------------------------------
 
-// ćwiczenie 2
+// -----------------------------------------------------------
+
+// ćwiczenie 2.
 
 const names = [2, "delfin", null];
 const exceptFirst = (names) => names.slice(1);
 
 console.log(exceptFirst(names));
-// ---------------------------------------------------
 
-// ćwiczenie 3
+// -----------------------------------------------------------
+
+// ćwiczenie 3.
 
 const parameters = [1, 3, undefined, true];
 
 const last2Parameters = (parameters) => parameters.slice(2)
 console.log(last2Parameters(parameters))
 
-// ---------------------------------------------------
+// -----------------------------------------------------------
 
 // ćwiczenie 4.
 
@@ -33,7 +35,20 @@ const kawa = ["rum", "kawa", "sangria"];
 const indexOf = () => kawa.indexOf("kawa")
 console.log(indexOf(kawa));
 
-// --------------------------------------------------------
+// -----------------------------------------------------------
+
+// ćwiczenie 5.
+
+const tasks = [
+    {content: ""},
+    {content: "kupić balony w kształcie psów"}, 
+]
+
+const findNonEmptyTask = (tasks) => tasks.find(({content}) => content !== "");
+
+console.log(findNonEmptyTask(tasks));
+
+// -----------------------------------------------------------
 
 // ćwiczenie 6.
 
