@@ -56,9 +56,9 @@ console.log(findNonEmptyTask(tasks));
 
 const numbers = [2, 4, 7, 8];
 
-const oddIndex = numbers.findIndex(number => number % 2 !== 0);
+const oddIndex = (numbers) => numbers.findIndex((number) => number % 2 !== 0);
 
-console.log(oddIndex);
+console.log(oddIndex(numbers));
 
 // ------------------------------------------------------------------
 
