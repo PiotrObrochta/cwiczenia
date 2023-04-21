@@ -1,13 +1,10 @@
 // ćwiczenie 1.
-const array1 = [2, 5];
-const array2 = [3, 7];
+const array1 = [2, 5]
+const array2 = [3, 7]
 
-const mergeArrays = [
-    ...array1,
-    ...array2,
-];
+const mergeArray = (array1, array2) => [array1, array2];
 
-console.log(mergeArrays);
+console.log(mergeArray(array1, array2));
 
 // ------------------------------------------------------------------
 
@@ -33,11 +30,12 @@ console.log(last2Parameters(parameters));
 
 // ćwiczenie 4.
 
-const kawa = ["rum", "kawa", "sangria"];
 
-const indexOf = () => kawa.indexOf("kawa");
+const drinks = ["rum", "kawa", "sangria"];
 
-console.log(indexOf(kawa));
+const indexOf = (drink, drinks) => drinks.indexOf(drink);
+
+console.log(indexOf("kawa", drinks));
 
 // ------------------------------------------------------------------
 
@@ -71,6 +69,7 @@ const fruits = ["banan", "marakuja"];
 const hasStrawberry = (fruits) => fruits.includes("truskawka");
 
 console.log(hasStrawberry(fruits));
+
 
 // ------------------------------------------------------------------
 
