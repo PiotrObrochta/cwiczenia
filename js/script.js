@@ -101,6 +101,42 @@ console.log(onlyString2(strings2));
 
 // ------------------------------------------------------------------
 
-//
+// ćwiczenie 10.
+
+const carBrands = ["Peugeot", "BMW", "Audi"];
+const premiumBrands = ["BMW", "Audi"];
+
+
+const filterPremium = (carBrands) => carBrands.filter((premium) => premiumBrands.includes(premium));
+
+console.log(filterPremium(carBrands));
+
+// ------------------------------------------------------------------
+
+// ćwiczenie 11.
+
+const cars = [
+    { car: "BMW X5", color: "black" },
+    { car: "Peugeot 3008", color: "white" },
+];
+
+const getColor = (cars) => cars.map(car => car.color);
+
+console.log(getColor(cars));
+
+// ------------------------------------------------------------------
+
+// ćwiczenie 12.
+
+const peoples = [
+    { name: "Kacper", age: 28 },
+    { name: "Paweł", age: 25 },
+];
+
+const sortPeople = (peoples) => peoples.sort((a,b) => a.age - b.age);
+console.log(sortPeople(peoples));
+
+
+
 
 
