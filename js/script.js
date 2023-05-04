@@ -11,7 +11,7 @@ console.log(mergeArray(array1, array2));
 // ćwiczenie 2.
 const names = [2, "delfin", null];
 
-const exceptFirst = (names) => names.slice(1);
+const exceptFirst = (...names) => names.slice(1);
 
 console.log(exceptFirst(names));
 
@@ -20,7 +20,7 @@ console.log(exceptFirst(names));
 // ćwiczenie 3.
 const parameters = [1, 3, undefined, true];
 
-const last2Parameters = (parameters) => parameters.slice(2);
+const last2Parameters = (...parameters) => parameters.slice(2);
 
 console.log(last2Parameters(parameters));
 
@@ -82,13 +82,10 @@ console.log(someAdult(people));
 const strings1 = ["", "Żelazko", 45];
 const strings2 = ["", "Żelazko"];
 
-const onlyString1 = (strings1) => strings1.every((string) => typeof string === "string");
+const onlyString = (strings) => strings.every((string) => typeof string === "string");
 
-console.log(onlyString1(strings1));
-
-const onlyString2 = (strings2) => strings2.every((string) => typeof string === "string");
-
-console.log(onlyString2(strings2));
+console.log(onlyString(strings1));
+console.log(onlyString(strings2));
 
 // ------------------------------------------------------------------
 
